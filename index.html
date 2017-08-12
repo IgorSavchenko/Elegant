@@ -25,16 +25,16 @@
         </div>
         <ul class="header__menu">
           <li class="header__menu-item">
-            <a class="header__menu-link" href="">hello</a>
+            <a class="header__menu-link" href="#">hello</a>
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link" href="">services</a>
+            <a class="header__menu-link" href="#services">services</a>
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link" href="">about us</a>
+            <a class="header__menu-link" href="#about">about us</a>
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link" href="">our works</a>
+            <a class="header__menu-link" href="#works">our works</a>
           </li>
           <li class="header__menu-item">
             <a class="header__menu-link" href="">contact us</a>
@@ -53,7 +53,7 @@
   </header>
   <!-- /.header -->
   <!-- services -->
-  <section class="services">
+  <section id="services" class="services">
     <div class="flex-container">
       <h2 class="services__title">our services</h2>
       <div class="services__info">
@@ -110,23 +110,48 @@
     </div>
   </section>
   <!-- /.services -->
-  <!-- product -->
-  <section class="product">
+  <!-- about -->
+  <section id="about" class="about">
     <div class="flex-container">
-      <div class="product__info">
-        <h2 class="product__info-title">dolore magna aliqua</h2>
-        <p class="product__info-text">
+      <div class="about__info">
+        <h2 class="about__info-title">dolore magna aliqua</h2>
+        <p class="about__info-text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
           sed do eiusmod tempor incididunt ut labore
-          et dolore magna aliqua.  
+          et dolore magna aliqua.
         </p>
-        <a href="" class="product__info-link">more</a>
+        <a href="#" target="_blank" class="about__info-link">more</a>
       </div>
-      <div class="product__info-picture">
-        <img class="product__info-img" src="assets/img/iphone.png" alt="Iphone">
+      <div class="about__info-picture">
+        <img class="about__info-img" src="assets/img/iphone.png" alt="Iphone">
       </div>
     </div>
   </section>
-  <!-- /.product -->
+  <!-- /.about -->
+  <!-- works -->
+    <section id="works" class="works">
+      <div class="flex-container">
+        <h2 class="works__title"></h2>
+        <ul class="works__list">
+          <li class="works__list-item">
+            <a class="works__list-link" href="#works">
+              <img class="works__list-img" src="assets/img/work-img-1.jpg" alt="Work example">
+            </a>
+          </li>
+          <li class="works__list-item">
+            <a class="works__list-link" href="#works">
+              <img class="works__list-img" src="assets/img/work-img-2.jpg" alt="Work example">
+            </a>
+          </li>
+          <li class="works__list-item">
+            <a class="works__list-link" href="#works">
+              <img class="works__list-img" src="assets/img/work-img-3.jpg" alt="Work example">
+            </a>
+          </li>
+        </ul>
+        <a class="works__referene" target="_blank" href="#">more</a>
+      </div>
+    </section>
+  <!-- /.works -->
   </body>
 </html>

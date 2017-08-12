@@ -63,8 +63,8 @@ body {
 }
 // sections
 @import "sections/header";
-// @import "sections/main";
-// @import "sections/footer";
+@import "sections/services";
+@import "sections/about";
 
 // blocks
 @import "blocks/flex-container";
