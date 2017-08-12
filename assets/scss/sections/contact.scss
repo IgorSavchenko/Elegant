@@ -1,0 +1,9 @@
+.contact {
+  background: #131b1e url('../img/bgd-contact.jpg') center center no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+  &__title {
+    @include header-styles;
+    color: $c-white;
+  }
+}

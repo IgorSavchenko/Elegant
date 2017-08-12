@@ -134,7 +134,8 @@ body {
     display: -ms-flex;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: flex-end; }
   .services__info {
     display: -webkit-flex;
@@ -172,7 +173,6 @@ body {
     .about__info-title {
       margin: 0;
       font-size: 45px;
-      line-height: 90px;
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: #ffffff;
@@ -184,6 +184,7 @@ body {
       line-height: 28px;
       color: #ffffff;
       text-align: left;
+      padding-top: 15px;
       padding-bottom: 70px; }
     .about__info-link {
       text-decoration: none;
@@ -194,6 +195,20 @@ body {
       text-decoration: underline; }
     .about__info-picture {
       margin: 75px 100px 0; }
+
+.contact {
+  background: #131b1e url("../img/bgd-contact.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 120px 0; }
+  .contact__title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #ffffff; }
 
 .flex-container {
   display: -webkit-flex;
