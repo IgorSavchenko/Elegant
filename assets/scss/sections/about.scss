@@ -1,0 +1,48 @@
+.about {
+  background: #454545 url('../img/bgd-img.jpg') 50% 50% no-repeat;
+  background-size: cover;
+  &__gallery {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__info {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &-title {
+      margin: 0;
+      font-size: 45px;
+      line-height: 90px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: $c-white;
+      text-align: left;
+    }
+    &-text {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 28px;
+      color: $c-white;
+      text-align: left;
+      padding-bottom: 70px;
+    }
+    &-link {
+      @include link-styles-reset;
+      font-size: 18px;
+      line-height: 28px;
+      color: $c-white;
+      text-decoration: underline;
+    }
+    &-picture {
+      margin: 75px 100px 0;
+    }
+  }
+}

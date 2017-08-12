@@ -1,3 +1,42 @@
 .services {
-
+  padding: 110px 0;
+  background: $c-white;
+  &__title {
+      @include header-styles;
+      &::after {
+        content: '';
+        display: block;
+        width: 86px;
+        height: 2px;
+        background: $c-text;
+        margin: 70px auto;
+      }
+  }
+  &__gallery {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__info {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    &-title {
+      font-size: 24px;
+      line-height: 24px;
+    }
+    &-text {
+      width: 350px;
+      line-height: 30px;
+    }
+  }
 }
