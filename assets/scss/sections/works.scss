@@ -1,0 +1,36 @@
+.works {
+  padding: 110px 0 80px;
+  background: $c-white;
+  &__title {
+    @include header-styles;
+    &::after {
+      content: '';
+      display: block;
+      width: 86px;
+      height: 2px;
+      background: $c-text;
+      margin: 70px auto;
+    }
+  }
+  &__list {
+    @include list-styles-reset;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__referene {
+    @include link-styles-reset;
+    margin: 70px auto 0;
+    display: block;
+    width: 370px;
+    height: 60px;
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    line-height: 60px;
+  }
+}

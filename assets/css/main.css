@@ -196,6 +196,47 @@ body {
     .about__info-picture {
       margin: 75px 100px 0; }
 
+.works {
+  padding: 110px 0 80px;
+  background: #ffffff; }
+  .works__title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 60px;
+    text-transform: uppercase; }
+    .works__title::after {
+      content: '';
+      display: block;
+      width: 86px;
+      height: 2px;
+      background: #222222;
+      margin: 70px auto; }
+  .works__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .works__referene {
+    text-decoration: none;
+    color: #222222;
+    margin: 70px auto 0;
+    display: block;
+    width: 370px;
+    height: 60px;
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    line-height: 60px; }
+
 .contact {
   background: #131b1e url("../img/bgd-contact.jpg") center center no-repeat;
   background-size: cover;
