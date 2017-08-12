@@ -1,28 +1,70 @@
+/*fonts*/
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato-thin-webfont.woff2') format('woff2'),
+  url('../fonts/lato-thin-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+  url('../fonts/lato-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato-medium-webfont.woff2') format('woff2'),
+  url('../fonts/lato-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+  url('../fonts/raleway-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
 // variables
-$c-custom: #3c3c3c;
+$c-text: #222222;
+$c-white: #ffffff;
+$c-link: #0576ab;
+@mixin list-styles-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+@mixin link-styles-reset {
+  text-decoration: none;
+  color: $c-text;
+}
+@mixin header-styles {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
 
 /*styles to all elements*/
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 /*styles to body*/
 body {
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5;
-  color: $c-custom;
+  font-weight: 400;
+  color: $c-text;
 }
-
-/*fonts*/
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
-
 // sections
 @import "sections/header";
-@import "sections/main";
-@import "sections/footer";
+// @import "sections/main";
+// @import "sections/footer";
 
 // blocks
-@import "blocks/box";
+@import "blocks/flex-container";

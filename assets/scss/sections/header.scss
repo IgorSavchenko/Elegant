@@ -1,0 +1,86 @@
+.header {
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #02496a url('../img/hero-img.jpg') center center no-repeat;
+  background-size: cover;
+  position: relative;
+  color: $c-white;
+    &__nav {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 240px;
+    }
+    &__logo {
+      &-link {
+        @include link-styles-reset;
+      }
+      &-img {
+        display: block;
+        height: 100%;
+      }
+    }
+    &__menu {
+      @include list-styles-reset;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+        &-item {
+          padding-right: 50px;
+            &:last-child {
+              padding-right: 0;
+            }
+        }
+        &-link {
+          @include link-styles-reset;
+          font-size: 14px;
+          font-weight: 700;
+          // line-height: 37.78px;
+          letter-spacing: 0.025em;
+          color: $c-white;
+          text-transform: uppercase;
+          transition: color 0.5s ease;
+          opacity: 0.8;
+            &:hover {
+              color: lighten($c-link, 20%);
+            }
+        }
+    }
+    &__title {
+      @include header-styles;
+      font-size: 48px;
+      color: $c-white;
+      &::after {
+        content: '';
+        display: block;
+        width: 86px;
+        height: 2px;
+        background: $c-white;
+        margin: 45px auto;
+      }
+    }
+    &__text {
+      margin: 0;
+      font-size: 22px;
+      line-height: 30px;
+      letter-spacing: 0.05em;
+      color: $c-white;
+    }
+    &__scroll {
+      @include link-styles-reset;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 45px;
+      transition: transform 1s ease;
+        &:hover {
+          transform: translateY(40px);
+        }
+    }
+}
