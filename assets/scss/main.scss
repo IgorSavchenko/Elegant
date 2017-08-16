@@ -31,10 +31,12 @@
 $c-text: #222222;
 $c-white: #ffffff;
 $c-link: #0576ab;
+$c-icons: #005494;
+
 @mixin list-styles-reset {
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
 }
 @mixin link-styles-reset {
   text-decoration: none;

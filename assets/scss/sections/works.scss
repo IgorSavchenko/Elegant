@@ -1,6 +1,11 @@
 .works {
   padding: 110px 0 80px;
   background: $c-white;
+  &__icon {
+    width: 41.031px;
+    height: 41.03px;
+    fill: $c-white;
+  }
   &__title {
     @include header-styles;
     &::after {
@@ -8,18 +13,72 @@
       display: block;
       width: 86px;
       height: 2px;
-      background: $c-text;
+      background: rgba(0, 0, 0, 0.75);
       margin: 70px auto;
     }
   }
   &__list {
     @include list-styles-reset;
+    width: 100%;
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    &-item {
+      width: calc(100% / 3 - 30px); //отступы по бокам
+      margin: 15px;
+      background: $c-text;
+      &:nth-of-type(3n+1) {
+        margin-left: 0;
+      }
+      &:nth-of-type(3n+3) {
+        margin-right: 0;
+      }
+    }
+    &-link {
+      @include link-styles-reset;
+      display: block;
+      position: relative;
+    }
+    &-img {
+      display: block;
+      max-width: 100%;
+      // height: 100%;
+      object-fit: cover;
+    }
+    &-description {
+      z-index: -1;// видно только при hover
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      height: 100%;
+      font-size: 22px;
+      line-height: 60px;
+      color: $c-white;
+      text-transform: uppercase;
+      text-align: center;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        // margin: 0;
+      }
+    }
+    &-link:hover &-img {
+      opacity: 0.1;
+    }
+    &-link:hover &-description {
+      z-index: 1;
+    }
   }
   &__referene {
     @include link-styles-reset;
@@ -32,5 +91,9 @@
     font-size: 24px;
     text-align: center;
     line-height: 60px;
+    transition: background 0.5s ease;
+    &:hover {
+      background: lighten($c-link, 20%);;
+    }
   }
 }

@@ -13,7 +13,7 @@
       flex-flow: row wrap;
       justify-content: space-between;
       align-items: flex-end;
-      padding-bottom: 240px;
+      padding-bottom: 30vh;
     }
     &__logo {
       &-link {
@@ -22,6 +22,10 @@
       &-img {
         display: block;
         height: 100%;
+        transition: transform 0.3s linear;
+      }
+      &-link:hover &-img {
+        transform: scale(1.2);
       }
     }
     &__menu {
@@ -31,8 +35,16 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
+      margin-right: 70px;
+      // using media queries for width 1024px
+      @media (max-width: 1280px) and (min-width: 1024px) {
+        & {
+          margin-right: 0;
+          }
+        }
         &-item {
-          padding-right: 50px;
+          padding-right: 45px;
+          white-space: nowrap;
             &:last-child {
               padding-right: 0;
             }
@@ -45,7 +57,7 @@
           letter-spacing: 0.025em;
           color: $c-white;
           text-transform: uppercase;
-          transition: color 0.5s ease;
+          transition: color 0.3s ease;
           opacity: 0.8;
             &:hover {
               color: lighten($c-link, 20%);
@@ -75,12 +87,14 @@
     &__scroll {
       @include link-styles-reset;
       position: absolute;
-      left: 0;
+      width: 96px;
+      height: 96px;
+      left: calc(50% - 48px);
       right: 0;
       bottom: 45px;
       transition: transform 1s ease;
         &:hover {
-          transform: translateY(40px);
+          transform: translateY(25px);
         }
     }
 }

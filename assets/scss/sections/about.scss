@@ -41,6 +41,10 @@
       line-height: 28px;
       color: $c-white;
       text-decoration: underline;
+      &:hover {
+        color: lighten($c-link, 20%);
+        text-decoration: none;
+      }
     }
     &-picture {
       margin: 75px 100px 0;
